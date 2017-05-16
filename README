@@ -1,0 +1,11 @@
+uinit -- smallest init possible
+
+This init just executes scripts and reaps zombies. It does nothing more beyond that.
+
+Included programs are:
+shutdown: standard minimal shutdown(8) (also signals init when called as reboot, halt or poweroff)
+spawn: reexecutes specified program until killed
+
+The code is in public domain.
+Thanks to Rich Felker's EWONTFIX blog post (http://ewontfix.com/14/) about sane init system.
+Spawn program is inspired by ninit's spawn, but completely rewritten.
